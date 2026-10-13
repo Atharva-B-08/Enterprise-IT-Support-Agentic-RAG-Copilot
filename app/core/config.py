@@ -10,8 +10,8 @@ class Settings(BaseSettings):
     openai_api_key: str = ""
     tavily_api_key: str = ""
     pinecone_api_key: str = ""
-    pinecone_index_name: str = "IT-support rag"
-    pinecone_namespace: str = "IT Suport KB"
+    pinecone_index_name: str = "it-support-rag"
+    pinecone_namespace: str = "it-support-kb"
     embedding_model: str = "text-embedding-3-small"
     openai_model: str = "gpt-4o-mini"
     top_k: int = 4
