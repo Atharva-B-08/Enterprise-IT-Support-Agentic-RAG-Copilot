@@ -8,12 +8,15 @@ class Settings(BaseSettings):
     app_name: str = "Enterprise IT Support Agentic RAG Copilot"
     app_env: str = "development"
     google_api_key: str = ""
+    groq_api_key: str = ""
     tavily_api_key: str = ""
     pinecone_api_key: str = ""
     pinecone_index_name: str = "it-support-rag"
     pinecone_namespace: str = "it-support-kb"
     embedding_model: str = "gemini-embedding-001"
-    openai_model: str = "gpt-4o-mini"
+    # Chat LLM served by Groq through its OpenAI-compatible API (used via langchain_openai.ChatOpenAI)
+    groq_base_url: str = "https://api.groq.com/openai/v1"
+    groq_model: str = ""
     top_k: int = 4
     max_retries: int = 1
     admin_api_key: str = "change-me"
