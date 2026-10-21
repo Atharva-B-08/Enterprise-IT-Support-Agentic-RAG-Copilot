@@ -226,3 +226,4 @@ pyproject.toml
 ingest_sample_kb.py
 pyproject.toml
 uv.lock
+tests/eval/results.json
