@@ -223,3 +223,6 @@ __init__.py
 
 uv.lock
 pyproject.toml
+ingest_sample_kb.py
+pyproject.toml
+uv.lock
