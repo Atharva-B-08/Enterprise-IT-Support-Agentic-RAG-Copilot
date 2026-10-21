@@ -19,6 +19,8 @@ def llm():
     if _llm is None:
         if not settings.groq_api_key:
             raise RuntimeError("GROQ_API_KEY is missing")
+        if not settings.groq_model:
+            raise RuntimeError("GROQ_MODEL is missing (set it in .env, e.g. llama-3.3-70b-versatile)")
         # Groq exposes an OpenAI-compatible endpoint, so ChatOpenAI works with a custom base_url.
         _llm = ChatOpenAI(
             model=settings.groq_model,
