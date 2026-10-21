@@ -8,11 +8,12 @@ class Settings(BaseSettings):
     app_name: str = "Enterprise IT Support Agentic RAG Copilot"
     app_env: str = "development"
     openai_api_key: str = ""
+    google_api_key: str = ""
     tavily_api_key: str = ""
     pinecone_api_key: str = ""
     pinecone_index_name: str = "it-support-rag"
     pinecone_namespace: str = "it-support-kb"
-    embedding_model: str = "text-embedding-3-small"
+    embedding_model: str = "gemini-embedding-001"
     openai_model: str = "gpt-4o-mini"
     top_k: int = 4
     max_retries: int = 1
